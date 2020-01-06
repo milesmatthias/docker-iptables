@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: iptables-dropped
+  labels:
+    name: iptables-dropped
+spec:
+  selector:
+    matchLabels:
+      name: iptables-dropped
+  template:
+    metadata:
+      labels:
+        name: iptables-dropped
+    spec:
+      containers:
+      - name: iptables-dropped
+        image: milesmatthias/iptables-dropped:latest
