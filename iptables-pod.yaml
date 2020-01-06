@@ -9,3 +9,5 @@ spec:
   containers:
   - name: iptables
     image: milesmatthias/iptables-dropped:latest
+    securityContext:
+      privileged: true

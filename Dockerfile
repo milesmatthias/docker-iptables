@@ -6,5 +6,3 @@ RUN \
 COPY start /start
 
 CMD /start
-
-
