@@ -1,0 +1,11 @@
+# kubectl exec -it iptables /bin/bash
+apiVersion: v1
+kind: Pod
+metadata:
+  name: iptables
+  labels:
+    name: iptables
+spec:
+  containers:
+  - name: iptables
+    image: milesmatthias/iptables-dropped:latest
